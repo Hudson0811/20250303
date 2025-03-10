@@ -22,7 +22,7 @@ function setup() {
   select.position(button.x + button.width + 10, 10); // 將下拉式選單放置在按鈕的右側
   select.option('第一周');
   select.option('第二周');
-  select.option('白癡測驗');
+  select.option('測驗');
   select.changed(updateIframe);
 
   iframe = createElement('iframe');
@@ -69,7 +69,7 @@ function updateIframe() {
     iframe.attribute('src', 'https://www.tku.edu.tw/');
   } else if (selectedOption === '第二周') {
     iframe.attribute('src', 'https://www.et.tku.edu.tw/');
-  } else if (selectedOption === '白癡測驗') {
+  } else if (selectedOption === '測驗') {
     iframe.attribute('src', 'https://hudson0811.github.io/20250310/');
   }
 }
